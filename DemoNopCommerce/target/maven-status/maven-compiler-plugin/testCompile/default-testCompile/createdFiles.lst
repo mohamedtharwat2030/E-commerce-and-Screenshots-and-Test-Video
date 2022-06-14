@@ -1,0 +1,8 @@
+org\example\stepDefinition\Hooks.class
+org\example\Pages\P05_HoverCategoriesPage.class
+org\example\Pages\P08_WishListPage.class
+org\example\Pages\P02_LoginPage.class
+org\example\Pages\P03_CurrenciesPage.class
+org\example\Pages\P04_SearchPage.class
+org\example\Pages\P06_HomeSlidersPage.class
+org\example\runners\TestRunners.class

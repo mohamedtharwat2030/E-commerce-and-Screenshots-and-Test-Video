@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="311.516">
+<testcase classname="F01_Register | user could register and make Account" name="guest user could register with valid data successfully" time="32.082">
+<system-out><![CDATA[Given user enter the registration page......................................passed
+When user select gender "male"..............................................passed
+And user enter first name "Mohamed" and last name "tester"..................passed
+And user enter date of birth................................................passed
+And user enter registration email "mohamed_th2030@gmail.comm"...............passed
+And user enter company "fwd"................................................passed
+And user fills Password fields "P@ssw0rd" and "P@ssw0rd"....................passed
+Then user click on register button to save data.............................passed
+And user registration completed successfully................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | user should be able to login the system" name="guest user could Login with valid credentials" time="12.752">
+<system-out><![CDATA[When user navigate to login page............................................passed
+And user enter "mohamed_th2030@gmail.comm" and "P@ssw0rd"...................passed
+Then user click on login button.............................................passed
+And user login successfully and go to home page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_Login | user should be able to login the system" name="guest user could Login with invalid credentials" time="14.347">
+<system-out><![CDATA[When user navigate to login page............................................passed
+And user enter "test@gmail.com" and "P@ssw0rd"..............................passed
+Then user click on login button.............................................passed
+And user could not login successfully and go to home page...................passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_Currencies | User can change Currencies" name="guest user could switch between currencies [$, €]" time="13.594">
+<system-out><![CDATA[When User enter Currencies list and select Euro [€].........................passed
+Then Euro Symbol [€] is displayed in Home page products.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | users will be able to search for products with different parameters" name="user could search using product name" time="14.811">
+<system-out><![CDATA[When user click on search field in Home page................................passed
+And user enter product name in search field "book"..........................passed
+Then user click on search button............................................passed
+And user could turned to search page........................................passed
+And user see products of search result......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | users will be able to search for products with different parameters" name="user could search using product name 2" time="15.253">
+<system-out><![CDATA[When user click on search field in Home page................................passed
+And user enter product name in search field "laptop"........................passed
+Then user click on search button............................................passed
+And user could turned to search page........................................passed
+And user see products of search result......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | users will be able to search for products with different parameters" name="user could search using product name 3" time="13.961">
+<system-out><![CDATA[When user click on search field in Home page................................passed
+And user enter product name in search field "nike"..........................passed
+Then user click on search button............................................passed
+And user could turned to search page........................................passed
+And user see products of search result......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | users will be able to search for products with different parameters" name=": user could search using sku" time="20.902">
+<system-out><![CDATA[When user click on search field in Home page................................passed
+And user enter product sku  in search field "SCI_FAITH".....................passed
+Then user click on search button............................................passed
+And user could turned to search page........................................passed
+And user enter to the product detail........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | users will be able to search for products with different parameters" name=": user could search using sku 2" time="20.984">
+<system-out><![CDATA[When user click on search field in Home page................................passed
+And user enter product sku  in search field "APPLE_CAM".....................passed
+Then user click on search button............................................passed
+And user could turned to search page........................................passed
+And user enter to the product detail........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_Search | users will be able to search for products with different parameters" name=": user could search using sku 3" time="25.117">
+<system-out><![CDATA[When user click on search field in Home page................................passed
+And user enter product sku  in search field "SF_PRO_11".....................passed
+Then user click on search button............................................passed
+And user could turned to search page........................................passed
+And user enter to the product detail........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05_hoverCategories | user could hover categories and select sub category" name="user could hover categories" time="9.219">
+<system-out><![CDATA[When user hover category and select subcategory.............................passed
+And user turned to subcategory page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F06_homeSliders | users will be able to open sliders in home page" name="user could open first slider" time="21.882">
+<failure message="Expected condition failed: waiting for url to contain &quot;https://demo.nopcommerce.com/nokia-lumia-1020&quot;. Current url: &quot;https://demo.nopcommerce.com/&quot; (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.2.0', revision: '86eb611648'&#10;System info: host: 'TAREKHAMDY', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Ladmin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49758/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cb1452ae9f39e1795731cd9b458c7c57" type="org.openqa.selenium.TimeoutException"><![CDATA[When enter slider number "1"................................................passed
+And user go to first slider detail page.....................................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "https://demo.nopcommerce.com/nokia-lumia-1020". Current url: "https://demo.nopcommerce.com/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.2.0', revision: '86eb611648'
+System info: host: 'TAREKHAMDY', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Ladmin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49758/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cb1452ae9f39e1795731cd9b458c7c57
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at org.example.stepDefinition.D06_HomeSliders.first_slider_detail(D06_HomeSliders.java:27)
+	at ✽.user go to first slider detail page(file:///C:/Users/Ladmin/IdeaProjects/DemoNopCommerce/src/main/resources/Features/F06_HomeSliders.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="F06_homeSliders | users will be able to open sliders in home page" name="user could open second slider" time="25.791">
+<failure message="Expected condition failed: waiting for url to contain &quot; https://demo.nopcommerce.com/iphone-6&quot;. Current url: &quot;https://demo.nopcommerce.com/&quot; (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.2.0', revision: '86eb611648'&#10;System info: host: 'TAREKHAMDY', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Ladmin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49850/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 86a005088aae7fa098645ddcad70d9a8" type="org.openqa.selenium.TimeoutException"><![CDATA[When enter slider number "2"................................................passed
+And user go to second slider detail page....................................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain " https://demo.nopcommerce.com/iphone-6". Current url: "https://demo.nopcommerce.com/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.2.0', revision: '86eb611648'
+System info: host: 'TAREKHAMDY', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Ladmin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49850/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86a005088aae7fa098645ddcad70d9a8
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at org.example.stepDefinition.D06_HomeSliders.second_slider_detail(D06_HomeSliders.java:39)
+	at ✽.user go to second slider detail page(file:///C:/Users/Ladmin/IdeaProjects/DemoNopCommerce/src/main/resources/Features/F06_HomeSliders.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user open facebook link" time="12.978">
+<system-out><![CDATA[When user scroll down and choose "facebook".................................passed
+Then open new tab of "facebook".............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user open twitter link" time="12.36">
+<system-out><![CDATA[When user scroll down and choose "twitter"..................................passed
+Then open new tab of "twitter"..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user open rss link" time="14.011">
+<failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[When user scroll down and choose "rss"......................................passed
+Then open new tab of "rss"..................................................failed
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.example.stepDefinition.D07_FollowUs.open_link(D07_FollowUs.java:26)
+	at ✽.open new tab of "rss"(file:///C:/Users/Ladmin/IdeaProjects/DemoNopCommerce/src/main/resources/Features/F07_FollowUs.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="F07_followUs | users could open followUs links" name="user open youtube link" time="15.073">
+<system-out><![CDATA[When user scroll down and choose "youtube"..................................passed
+Then open new tab of "youtube"..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_WishList | user could add products to wishlist" name="After user add products to wishlist success message is visible" time="15.255">
+<system-out><![CDATA[When user add products to wishlist..........................................passed
+Then wishlist success message is visible....................................passed
+And user get number of products added to wishlist...........................passed
+Then number of wishlist products increased..................................passed
+And user go to wishlist page................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

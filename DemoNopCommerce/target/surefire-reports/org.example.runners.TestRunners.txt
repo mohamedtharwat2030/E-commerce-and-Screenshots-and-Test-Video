@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: org.example.runners.TestRunners
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 313.416 s <<< FAILURE! - in org.example.runners.TestRunners
+runScenario(org.example.runners.TestRunners)  Time elapsed: 22.687 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for url to contain "https://demo.nopcommerce.com/nokia-lumia-1020". Current url: "https://demo.nopcommerce.com/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.2.0', revision: '86eb611648'
+System info: host: 'TAREKHAMDY', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Ladmin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49758/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cb1452ae9f39e1795731cd9b458c7c57
+
+runScenario(org.example.runners.TestRunners)  Time elapsed: 25.797 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for url to contain " https://demo.nopcommerce.com/iphone-6". Current url: "https://demo.nopcommerce.com/" (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.2.0', revision: '86eb611648'
+System info: host: 'TAREKHAMDY', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Ladmin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49850}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49850/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86a005088aae7fa098645ddcad70d9a8
+
+runScenario(org.example.runners.TestRunners)  Time elapsed: 14.02 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+
